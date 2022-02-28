@@ -15,12 +15,12 @@ export default function renderArticle(){
     const content = renderDesktop();
 
     // Add it to the container
-    container.appendChild(content);
+      container.innerHTML = content;
   } else {
     // Get the mobile HTML
     const content = renderMobile();
 
     // Add it to the container
-    container.appendChild(content);
+      container.innerHTML = content;
   }
 }
