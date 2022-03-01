@@ -1,4 +1,4 @@
-Intro to Web Development 3 (JavaScript Modules)
+# Intro to Web Development 3 (JavaScript Modules)
 *This course is part of NICAR's 2022 Conference. [Read more about NICAR 2022 here](https://www.ire.org/training/conferences/nicar-2022/).*
 
 Writing JavaScript directly into an HTML file is great and all, but many newsroom developers today also use modern JavaScript patterns to optimize, scale and test their code. This class will give you an introduction to the main principles of organizing your code into modules, installing dependencies, and the basics of using frameworks to build your websites.
