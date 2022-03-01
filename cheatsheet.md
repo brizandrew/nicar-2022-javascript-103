@@ -9,23 +9,21 @@ To open a terminal, find the Terminal app on your computer. (For Macs it's under
 *Further Reading: [CodeAcademy: Learn the Command Line](https://www.codecademy.com/learn/learn-the-command-line)*
 
 ## What is Node
-Node is a [JavaScript runtime](https://www.codecademy.com/article/introduction-to-javascript-runtime-environments) which allows you to execute JavaScript on your computer (without a browser). It comes with a few basic commands/subcommands:
-- `node`: Start a live runtime in your Terminal (close it by typing Ctrl+C)
+Node is a [JavaScript runtime](https://www.codecademy.com/article/introduction-to-javascript-runtime-environments) which allows you to execute JavaScript on your computer (without a browser). You can install it [here](https://nodejs.org/en/download/), and it comes with a few basic commands/subcommands:
+- `node`: Start a live runtime in your Terminal (exit it by hitting Ctrl+C)
 - `node <PATH_TO_JS_FILE>`: Run the file passed as an argument using the runtime
 - `npm init`: Start a new JavaScript project in your working directory (creates a file called `package.json`)
 - `npm install`: Download all dependencies listed in the `package.json`
 - `npm install <DEPENDENCY_NAME_HERE>`: Install a dependency from the NPM registry into your project
 - `npx <DEPENDENCY_COMMAND_HERE>`: Many dependencies come with their own commands, use this to run those commands with the appropriate arguments.
 
-*Further Reading: [CodeAcademy: Learn the Command Line](https://www.codecademy.com/learn/learn-the-command-line)*
-
 ## Welcome to Parcel
-[Parcel](https://parceljs.org/) is only one framework available to modern JavaScript developers. Frameworks are tools that help you convert your modules into a bundle to use as a website. Frameworks usually come with a number of opinions on how you should structure your code. Almost all frameworks come with two services (the exact command may vary from framework to framework):
-- dev: The framework starts a development server which provides quality of life tools to make writing JavaScript in modules easier.
+[Parcel](https://parceljs.org/) is one framework available to modern JavaScript developers. Frameworks are tools that help you convert your modules into a bundle to use as a website. Frameworks usually come with a number of opinions on how you should structure your code. Almost all frameworks come with three services (the exact command may vary from framework to framework):
+- dev: Starts a development server which provides quality of life tools to make writing JavaScript in modules easier.
 - build: Combines all your JavaScript modules (and your used dependencies) into one or a few files
 - export: Builds an HTML page for each web page on your site (with proper links to the your static JS files)
 
-If you're using Parcel, the command to start a development server is:
+If you're using Parcel, the command to start a development server is (exit it by hitting Ctrl+C):
 ```bash
 npx parcel src/index.html
 ```
@@ -80,7 +78,7 @@ Popular dependencies for coding in Journalism:
   - [`journalize`](https://www.npmjs.com/package/journalize): Helper functions for writing text in journalistic style
   - [`jquery`](https://www.npmjs.com/package/jquery): Helper functions that are [mostly unnecesary in 2022](https://youmightnotneedjquery.com/), but if you're used to using it, this is how you can import it in your modules
   - [`us`](https://www.npmjs.com/package/us): Data about US states including fips codes, AP style abbreviations, and capitals
-  - [`lorem-ipsum`]: Generates placeholder text
+  - [`lorem-ipsum`](https://www.npmjs.com/package/lorem-ipsum): Generates placeholder text
 
 *Further Reading: [State of JS 2021: Popular Libraries](https://2021.stateofjs.com/en-US/other-tools)*
 

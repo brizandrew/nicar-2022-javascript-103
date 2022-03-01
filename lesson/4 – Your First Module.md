@@ -3,11 +3,11 @@ One of the benefits of using modern, modular JavaScript is that you can organize
 
 
 ## Coding a Default Export
-In order to import something into your main file, you first need to create a module. Let's make a folder called `renderArticle` in our `src` directory. And inside that, make a file called `index.js`. 
+In order to import something into your main file, you first need to create a module. Make a folder called `renderArticle` in your `src` directory. And inside that, make a file called `index.js`. 
 
 <details>
     <summary>Why index.js?</summary>
-    A common pattern you see in JavaScript is there being a filed called "index.js" inside a folder which [represents an entry point](https://stackoverflow.com/questions/21063587/what-is-index-js-used-for-in-node-js-projects) into the module. Most frameworks will then interpret an attempt to "import" the folder as an attempt to import that index file. For example, if you import "src/renderArticle", Parcel knows to look for the file "src/renderArticle/index.js".
+A common pattern you see in JavaScript is haivng a file named "index.js" inside a folder which [represents an entry point](https://stackoverflow.com/questions/21063587/what-is-index-js-used-for-in-node-js-projects) into the module. Most frameworks will interpret an attempt to "import" the folder as an attempt to import that index file. For example, if you import "src/renderArticle", Parcel knows to look for the file "src/renderArticle/index.js".
 </details>
 
 Inside `index.js`, paste 
@@ -23,7 +23,7 @@ This is what's called the "default export" syntax. You start with the keywords "
 
 ## Coding a Default Import
 
-Now that you've exported something, let's go back to `app.js` and import it! Inside `app.js`, delete what you have and paste the following:
+Now that you've exported something, go back to `app.js` and import it! Inside `app.js`, delete what you have and paste the following:
 ```javascript
 // src/app.js
 
@@ -32,9 +32,9 @@ import renderArticle from "./renderArticle";
 renderArticle();
 ```
 
-This is the "default import" syntax in which you write the keyword "import", followed by whatever you want to name the import in this file (think of this as creating a new variable in your file) then the keyword "from" and then a relative path to the file you're trying to import. (Why don't you need the `index.js` part? Read "Why index.js?" above.) 
+This is the "default import" syntax in which you write the keyword "import", followed by whatever you want to name the import in this file (think of this as creating a new variable in your file), next the keyword "from", and then a relative path to the file you're trying to import. (Why don't you need the `index.js` part? Read "Why index.js?" above.) 
 
-Finally, since you imported a function, you can then run it. You should see the output message change.
+Finally, since you imported a function, you can then run it. You should see the output message change in your page's console.
 
 **REMEMBER!** When using "default" imports/exports the name of the thing exported (function, variable, array, etc.) does NOT need to match the name used when imported. Default exports are useful when your file only needs to export one thing.
 
@@ -57,7 +57,7 @@ export {
 }
 ```
 
-With the named exports ready, let's go into `src/renderArticle/index.js` and import just the headline for now. At the top of the page add the following:
+With the named exports ready, go into `src/renderArticle/index.js` and import just the headline for now. At the top of the page add the following:
 
 ```javascript
 // src/renderArticle/index.js
@@ -69,7 +69,7 @@ You can see above that the syntax is similiar. Start with the keyword `import`, 
 
 <details>
     <summary>Why no ".js?"</summary>
-    Another common pattern you see in JavaScript is to avoid using the ".js" at the end of a JavaScript file. Most frameworks will assume that a file without an extension is a JavaScript file and will import it as such. As you get into more complicated setups you can import other types of files and write "loaders" so that your framework understands how to handle each file.
+    Another common pattern you see in JavaScript imports from files without including the ".js" extension. Most frameworks will assume that a file without an extension is a JavaScript file and will import it as such. As you get into more complicated setups you can import other types of files and write "loaders" so that your framework understands how to handle each file.
 </details>
 
 Now, swap out the argument to console.log from `'Render article!'` to just `headline` (no quotes, becuase it's not the STRING, `"headline"`). Once you save, you should see the console logging the headline to the article:

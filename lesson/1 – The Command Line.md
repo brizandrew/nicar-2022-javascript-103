@@ -1,5 +1,5 @@
 # Section 1: The Comand Line
-In order to use modern JavaScript tools, you'll need a _very_ fundamental primer on the Terminal. Terminal is an app that all MacOS and Linux computers come with that allows you to run bash commands (you can download [a bash terminal program for Windows](https://gitforwindows.org/) as well). You use the terminal by typing in bash commands and hitting enter. There's LOTS of commands to start and installing new software often gives you even more. For today's lesson we're going to focus on only a few.
+In order to use modern JavaScript tools, you'll need a _very_ fundamental primer on the Terminal. Terminal is an app that all MacOS and Linux computers come with that allows you to run bash commands (you can download [a bash terminal program for Windows](https://gitforwindows.org/) as well). You use the terminal by typing in bash commands and hitting enter. There's A LOT of commands to start and installing new software often gives you even more. For today's lesson we're going to focus on only a few.
 
 The first command is `pwd` which stands for "print working directory" and tells you what folder on your computer you're currently working in:
 ```bash
@@ -13,6 +13,10 @@ To "open" one of them (like you would double-click in a normal Finder window) we
 cd <INSERT_NAME_OF_DIRECTORY_HERE>
 ```
 
-One "cheat" you can do with cd though is find the folder you want to go toin Finder. Write the letters "cd" and a space in the Terminal. And then, drag the folder into the Terminal. You should see a path show up. Finaly, hit enter! Let's CD into the directory called `1 – Start Here`.
+One "cheat" you can do with cd though is find the folder you want to go toin Finder. Write the letters "cd" and a space in the Terminal. And then, drag the folder into the Terminal. You should see a path show up. Finaly, hit enter! 
+
+![A GIF showing the cheat described in the paragraph above](./img/cd-cheat.gif "CD Drag and Drop Cheat")
+
+Let's CD into the directory called `working` in our project folder.
 
 *–– Next up: [What is Node?](2%20– What%20is%20Node.md)*
