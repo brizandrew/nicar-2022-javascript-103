@@ -66,7 +66,7 @@ Then import them usually using a default import:
 import dep from '<DEPEDENCY_NAME>';
 ```
 
-Sometimes depdencies use named exports and don't have a default export. Check the dependency docs for more info about each one.
+Sometimes dependencies use named exports and don't have a default export. Check the dependency docs for more info about each one.
 
 Anyone can publish to NPM so if you're not sure if something is good, you can often look at the number of weekly downloads:
 - Greater than 1M: Popular and actively supported, definitely can use it

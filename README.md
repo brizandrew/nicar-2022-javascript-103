@@ -3,7 +3,7 @@
 
 Writing JavaScript directly into an HTML file is great and all, but many newsroom developers today also use modern JavaScript patterns to optimize, scale and test their code. This class will give you an introduction to the main principles of organizing your code into modules, installing dependencies, and the basics of using frameworks to build your websites.
 
-This session is good for: People with a decent decent grasp of browser JavaScript who want to take their process to another level.
+This session is good for: People with a decent grasp of browser JavaScript who want to take their process to another level.
 
 ## Cheatsheet
 If you were at the session (thanks for coming!), here's [a link](cheatsheet.md) to my cheatsheet.
