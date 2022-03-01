@@ -8,7 +8,7 @@ npx parcel build src/index.html --public-url ./
 
 <details>
     <summary>The build failed!</summary>
-    If you see an error that says "Target "main" declares an output file path of "testme.js"", go to your `src/package.json` file and delete the line that reads: `"main": "testme.js",`. Because there was a JavaScript file in your folder when you ran `npm init`, there's a chance it added that line which shouldn't be there.
+    If you see an error that says "Target "main" declares an output file path of "testme.js"", go to your `src/package.json` file and delete the line that reads: <code>"main": "testme.js",</code>. Because there was a JavaScript file in your folder when you ran `npm init`, there's a chance it added that line which shouldn't be there.
 </details>
 
 This will save those files in a folder called `dist`. You can then upload the contents of that folder to any server you have access to.
